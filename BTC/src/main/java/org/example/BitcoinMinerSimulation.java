@@ -22,7 +22,7 @@ public class BitcoinMinerSimulation {
         System.out.println("Block mined! Nonce: " + blocksMined + ", Hash: " + hash);
         int blockReward = initialReward - blocksMined;
         if (totalCoins + blockReward > maxCoins) {
-          blockReward = maxCoins - totalCoins; // Обмежуємо винагороду, щоб не перевищувала максимальну кількість монет
+          blockReward = maxCoins - totalCoins; 
         }
         if (blockReward <= 0) {
           System.out.println("Reward exhausted!");
